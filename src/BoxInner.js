@@ -1,5 +1,6 @@
 import React, { Component } from "react"
-import BoxTitle from "./Title"
+import BoxTitle from "./BoxTitle"
+import BoxButton from "./BoxButton"
 
 export default class BoxInner extends Component {
   render() {
@@ -7,7 +8,7 @@ export default class BoxInner extends Component {
 
       <div className={this.props.boxClass + " " + this.props.theme}>
         <BoxTitle>{this.props.theme}</BoxTitle>
-        <button className={this.props.theme}>A button</button>
+        <BoxButton theme={this.props.theme} />
       </div>
     )
   }

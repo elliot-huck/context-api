@@ -5,20 +5,31 @@ body {
   box-sizing: border-box;
 }
 
+.header {
+  max-height: 25vmin;
+}
+
 .box {
   border: 1px solid black;
   margin: 1em;
-  padding: .5em;
-  height: 80vmin;
-  width: 80vmin;
+  padding: 5%;
+  min-height: 60vmin;
+  max-height: 70vmin;
+  width: 70vmin;
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around
 }
 
 .innerBox {
-  height: 25%;
-  width: 25%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  width: 30%;
   margin: 1em;
+  padding: 1em;
   border: 5px solid;
 }
 
@@ -40,8 +51,18 @@ body {
   background-color: palegreen
 }
 
-.black {
-  color: black;
-  border-color: black;
-  background-color: lightgray;
+.yellow {
+  color: goldenrod;
+  border-color: goldenrod;
+  background-color: lemonchiffon;
+}
+
+button {
+  padding: .5em;
+  border: 2px outset;
+  margin: 1em;
+}
+
+button:active {
+  border: 2px inset;
 }

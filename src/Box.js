@@ -6,11 +6,10 @@ export default class Box extends Component {
     return (
 
       <div className="box">
-        {this.props.text}
         <BoxInner boxClass={"innerBox"} theme={"red"} />
         <BoxInner boxClass={"innerBox"} theme={"blue"}/>
         <BoxInner boxClass={"innerBox"} theme={"green"} />
-        <BoxInner boxClass={"innerBox"} theme={"black"} />
+        <BoxInner boxClass={"innerBox"} theme={"yellow"} />
       </div>
     )
   }
