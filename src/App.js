@@ -8,9 +8,10 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Header />
-        <ThemeSelector />
-        <Box />
+        <ThemeSelector>
+          <Header />
+          <Box />
+        </ThemeSelector>
       </React.Fragment>
     );
   }
